@@ -23,7 +23,4 @@ macro(check_required_components _NAME)
 endmacro()
 
 ####################################################################################
-include(CMakeFindDependencyMacro)
-find_dependency(BZip2 REQUIRED)
-find_dependency(Iconv REQUIRED)
 include("${CMAKE_CURRENT_LIST_DIR}/minizip.cmake")
