@@ -179,6 +179,10 @@ int32_t mz_stream_libcomp_read(void *stream, void *buf, int32_t size) {
     if (libcomp->error != 0)
         return MZ_DATA_ERROR;
 
+    // "fix" clang complain on assigned, but never used
+    int32_t a = total_in;
+    total_in = a;
+
     return total_out;
 #endif
 }
