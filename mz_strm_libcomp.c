@@ -117,7 +117,7 @@ int32_t mz_stream_libcomp_read(void *stream, void *buf, int32_t size) {
     uint64_t total_in_after = 0;
     uint64_t total_out_before = 0;
     uint64_t total_out_after = 0;
-    int32_t total_in = 0;
+    __unused int32_t total_in = 0;
     int32_t total_out = 0;
     int32_t in_bytes = 0;
     int32_t out_bytes = 0;
@@ -178,10 +178,6 @@ int32_t mz_stream_libcomp_read(void *stream, void *buf, int32_t size) {
 
     if (libcomp->error != 0)
         return MZ_DATA_ERROR;
-
-    // "fix" clang complain on assigned, but never used
-    int32_t a = total_in;
-    total_in = a;
 
     return total_out;
 #endif
