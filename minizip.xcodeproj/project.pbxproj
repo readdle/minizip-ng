@@ -364,6 +364,8 @@
 				);
 				PRODUCT_NAME = minizip;
 				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos xrsimulator xros";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Release;
@@ -534,6 +536,8 @@
 				);
 				PRODUCT_NAME = minizip;
 				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos xrsimulator xros";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 				WARNING_CFLAGS = "$(inherited)";
 			};
 			name = Debug;
