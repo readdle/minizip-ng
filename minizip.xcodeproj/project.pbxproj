@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -224,7 +224,8 @@
 		C35A938256FE491EB6653372 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1400;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					BE5E69CE285B302C0022433D = {
 						CreatedOnToolsVersion = 13.3;
