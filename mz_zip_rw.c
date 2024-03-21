@@ -1342,6 +1342,9 @@ int32_t mz_zip_writer_entry_open(void *handle, mz_zip_file *file_info) {
         if (err != MZ_OK) {
             writer->hash_algorithm = MZ_HASH_SHA1;
             err = mz_crypt_sha_set_algorithm(writer->hash, writer->hash_algorithm);
+            if (err != MZ_OK) {
+                return err;
+            }
         }
 
         mz_crypt_sha_begin(writer->hash);
