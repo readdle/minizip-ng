@@ -1,4 +1,5 @@
 build/
 third_party/
 minizip.xcodeproj/xcuserdata
+minizip.xcodeproj/project.xcworkspace/xcuserdata
 .vscode
