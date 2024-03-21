@@ -1,4 +1,4 @@
-build/build/
-build/minizip.build/
-build/minizip.xcodeproj/xcuserdata/
+build/
+third_party/
 minizip.xcodeproj/xcuserdata
+.vscode
