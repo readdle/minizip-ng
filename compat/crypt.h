@@ -41,7 +41,7 @@ typedef unsigned int z_crc_t;
 /***************************************************************************/
 /* Return the next byte in the pseudo-random sequence */
 
-__unused static int decrypt_byte(unsigned long *pkeys, const z_crc_t *pcrc_32_tab) {
+static int decrypt_byte(unsigned long *pkeys, const z_crc_t *pcrc_32_tab) {
     unsigned temp; /* POTENTIAL BUG:  temp*(temp^1) may overflow in an
                     * unpredictable manner on 16-bit systems; not a problem
                     * with any known compiler so far, though */
@@ -68,7 +68,7 @@ static int update_keys(unsigned long *pkeys, const z_crc_t *pcrc_32_tab, int c) 
 /***************************************************************************/
 /* Initialize the encryption keys and the random header according to the password. */
 
-__unused static void init_keys(const char *passwd, unsigned long *pkeys, const z_crc_t *pcrc_32_tab) {
+static void init_keys(const char *passwd, unsigned long *pkeys, const z_crc_t *pcrc_32_tab) {
     *(pkeys + 0) = 305419896L;
     *(pkeys + 1) = 591751049L;
     *(pkeys + 2) = 878082192L;

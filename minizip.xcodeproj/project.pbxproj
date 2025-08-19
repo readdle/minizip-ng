@@ -16,6 +16,7 @@
 		AD9CF71C2E545EC50004CCA9 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9CF7162E545EC50004CCA9 /* ioapi.c */; };
 		AD9CF71D2E545EC50004CCA9 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9CF7172E545EC50004CCA9 /* unzip.c */; };
 		AD9CF71E2E545EC50004CCA9 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9CF7182E545EC50004CCA9 /* zip.c */; };
+		AD9CF7222E5462FF0004CCA9 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9CF7212E5462FF0004CCA9 /* crypt.h */; };
 		BE272AFC28883EAE00BBE659 /* mz_strm_libcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = BE272AEC28883EAE00BBE659 /* mz_strm_libcomp.c */; };
 		BE272AFD28883EAE00BBE659 /* mz_strm_libcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = BE272AEC28883EAE00BBE659 /* mz_strm_libcomp.c */; };
 		BE272AFE28883EAE00BBE659 /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = BE272AED28883EAE00BBE659 /* mz_strm_pkcrypt.c */; };
@@ -54,6 +55,7 @@
 		AD9CF7162E545EC50004CCA9 /* ioapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/compat/ioapi.c; sourceTree = "<group>"; };
 		AD9CF7172E545EC50004CCA9 /* unzip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/compat/unzip.c; sourceTree = "<group>"; };
 		AD9CF7182E545EC50004CCA9 /* zip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/compat/zip.c; sourceTree = "<group>"; };
+		AD9CF7212E5462FF0004CCA9 /* crypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/compat/crypt.h; sourceTree = "<group>"; };
 		BE272AEC28883EAE00BBE659 /* mz_strm_libcomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mz_strm_libcomp.c; path = minizip/mz_strm_libcomp.c; sourceTree = "<group>"; };
 		BE272AED28883EAE00BBE659 /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mz_strm_pkcrypt.c; path = minizip/mz_strm_pkcrypt.c; sourceTree = "<group>"; };
 		BE272AEE28883EAE00BBE659 /* mz_strm_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mz_strm_buf.c; path = minizip/mz_strm_buf.c; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		887CF2701EB54C00AB4180C8 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD9CF7212E5462FF0004CCA9 /* crypt.h */,
 				AD9CF7102E545EBB0004CCA9 /* ioapi.h */,
 				AD9CF7112E545EBB0004CCA9 /* unzip.h */,
 				AD9CF7122E545EBB0004CCA9 /* zip.h */,
@@ -193,6 +196,7 @@
 				AD9CF7132E545EBB0004CCA9 /* unzip.h in Headers */,
 				AD9CF7142E545EBB0004CCA9 /* zip.h in Headers */,
 				AD9CF7152E545EBB0004CCA9 /* ioapi.h in Headers */,
+				AD9CF7222E5462FF0004CCA9 /* crypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
