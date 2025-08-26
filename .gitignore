@@ -1,4 +1,9 @@
+# builds
+_deps/
 build/
+CMakeFiles/
+lib/
+Testing/
 third_party/
 minizip.xcodeproj/xcuserdata
 minizip.xcodeproj/project.xcworkspace/xcuserdata

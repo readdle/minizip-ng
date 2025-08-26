@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE272AFA28883EAE00BBE659 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = BE272AEB28883EAE00BBE659 /* mz_compat.c */; };
-		BE272AFB28883EAE00BBE659 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = BE272AEB28883EAE00BBE659 /* mz_compat.c */; };
+		AD9CF7132E545EBB0004CCA9 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9CF7112E545EBB0004CCA9 /* unzip.h */; };
+		AD9CF7142E545EBB0004CCA9 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9CF7122E545EBB0004CCA9 /* zip.h */; };
+		AD9CF7152E545EBB0004CCA9 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9CF7102E545EBB0004CCA9 /* ioapi.h */; };
+		AD9CF7192E545EC50004CCA9 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9CF7162E545EC50004CCA9 /* ioapi.c */; };
+		AD9CF71A2E545EC50004CCA9 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9CF7172E545EC50004CCA9 /* unzip.c */; };
+		AD9CF71B2E545EC50004CCA9 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9CF7182E545EC50004CCA9 /* zip.c */; };
+		AD9CF71C2E545EC50004CCA9 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9CF7162E545EC50004CCA9 /* ioapi.c */; };
+		AD9CF71D2E545EC50004CCA9 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9CF7172E545EC50004CCA9 /* unzip.c */; };
+		AD9CF71E2E545EC50004CCA9 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = AD9CF7182E545EC50004CCA9 /* zip.c */; };
+		AD9CF7222E5462FF0004CCA9 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9CF7212E5462FF0004CCA9 /* crypt.h */; };
 		BE272AFC28883EAE00BBE659 /* mz_strm_libcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = BE272AEC28883EAE00BBE659 /* mz_strm_libcomp.c */; };
 		BE272AFD28883EAE00BBE659 /* mz_strm_libcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = BE272AEC28883EAE00BBE659 /* mz_strm_libcomp.c */; };
 		BE272AFE28883EAE00BBE659 /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = BE272AED28883EAE00BBE659 /* mz_strm_pkcrypt.c */; };
@@ -41,7 +49,13 @@
 
 /* Begin PBXFileReference section */
 		42D7C169221E452496057EC7 /* libminizip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libminizip.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE272AEB28883EAE00BBE659 /* mz_compat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mz_compat.c; path = minizip/mz_compat.c; sourceTree = "<group>"; };
+		AD9CF7102E545EBB0004CCA9 /* ioapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/compat/ioapi.h; sourceTree = "<group>"; };
+		AD9CF7112E545EBB0004CCA9 /* unzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/compat/unzip.h; sourceTree = "<group>"; };
+		AD9CF7122E545EBB0004CCA9 /* zip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/compat/zip.h; sourceTree = "<group>"; };
+		AD9CF7162E545EC50004CCA9 /* ioapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/compat/ioapi.c; sourceTree = "<group>"; };
+		AD9CF7172E545EC50004CCA9 /* unzip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/compat/unzip.c; sourceTree = "<group>"; };
+		AD9CF7182E545EC50004CCA9 /* zip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/compat/zip.c; sourceTree = "<group>"; };
+		AD9CF7212E5462FF0004CCA9 /* crypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/compat/crypt.h; sourceTree = "<group>"; };
 		BE272AEC28883EAE00BBE659 /* mz_strm_libcomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mz_strm_libcomp.c; path = minizip/mz_strm_libcomp.c; sourceTree = "<group>"; };
 		BE272AED28883EAE00BBE659 /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mz_strm_pkcrypt.c; path = minizip/mz_strm_pkcrypt.c; sourceTree = "<group>"; };
 		BE272AEE28883EAE00BBE659 /* mz_strm_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mz_strm_buf.c; path = minizip/mz_strm_buf.c; sourceTree = "<group>"; };
@@ -57,7 +71,6 @@
 		BE272AF828883EAE00BBE659 /* mz_os.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mz_os.c; path = minizip/mz_os.c; sourceTree = "<group>"; };
 		BE272AF928883EAE00BBE659 /* mz_crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mz_crypt.c; path = minizip/mz_crypt.c; sourceTree = "<group>"; };
 		BE272B1828883F3700BBE659 /* mz_strm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_strm.h; path = minizip/mz_strm.h; sourceTree = "<group>"; };
-		BE272B1928883F3700BBE659 /* mz_compat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_compat.h; path = minizip/mz_compat.h; sourceTree = "<group>"; };
 		BE272B1A28883F3700BBE659 /* mz_strm_os.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_strm_os.h; path = minizip/mz_strm_os.h; sourceTree = "<group>"; };
 		BE272B1B28883F3700BBE659 /* mz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz.h; path = minizip/mz.h; sourceTree = "<group>"; };
 		BE272B1C28883F3700BBE659 /* mz_crypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_crypt.h; path = minizip/mz_crypt.h; sourceTree = "<group>"; };
@@ -65,9 +78,7 @@
 		BE272B1E28883F3700BBE659 /* mz_strm_pkcrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_strm_pkcrypt.h; path = minizip/mz_strm_pkcrypt.h; sourceTree = "<group>"; };
 		BE272B1F28883F3700BBE659 /* mz_strm_split.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_strm_split.h; path = minizip/mz_strm_split.h; sourceTree = "<group>"; };
 		BE272B2028883F3700BBE659 /* mz_zip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_zip.h; path = minizip/mz_zip.h; sourceTree = "<group>"; };
-		BE272B2128883F3700BBE659 /* unzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
 		BE272B2228883F3700BBE659 /* mz_os.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_os.h; path = minizip/mz_os.h; sourceTree = "<group>"; };
-		BE272B2328883F3800BBE659 /* zip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
 		BE272B2428883F3800BBE659 /* mz_strm_mem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_strm_mem.h; path = minizip/mz_strm_mem.h; sourceTree = "<group>"; };
 		BE272B2528883F3800BBE659 /* mz_strm_libcomp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_strm_libcomp.h; path = minizip/mz_strm_libcomp.h; sourceTree = "<group>"; };
 		BE272B2628883F3800BBE659 /* mz_zip_rw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mz_zip_rw.h; path = minizip/mz_zip_rw.h; sourceTree = "<group>"; };
@@ -96,7 +107,9 @@
 		0DE7DCC641F246E3A0569C76 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE272AEB28883EAE00BBE659 /* mz_compat.c */,
+				AD9CF7162E545EC50004CCA9 /* ioapi.c */,
+				AD9CF7172E545EC50004CCA9 /* unzip.c */,
+				AD9CF7182E545EC50004CCA9 /* zip.c */,
 				BE272AF328883EAE00BBE659 /* mz_crypt_apple.c */,
 				BE272AF928883EAE00BBE659 /* mz_crypt.c */,
 				BE272AF228883EAE00BBE659 /* mz_os_posix.c */,
@@ -118,7 +131,10 @@
 		887CF2701EB54C00AB4180C8 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE272B1928883F3700BBE659 /* mz_compat.h */,
+				AD9CF7212E5462FF0004CCA9 /* crypt.h */,
+				AD9CF7102E545EBB0004CCA9 /* ioapi.h */,
+				AD9CF7112E545EBB0004CCA9 /* unzip.h */,
+				AD9CF7122E545EBB0004CCA9 /* zip.h */,
 				BE272B1C28883F3700BBE659 /* mz_crypt.h */,
 				BE272B2228883F3700BBE659 /* mz_os.h */,
 				BE272B1D28883F3700BBE659 /* mz_strm_buf.h */,
@@ -132,8 +148,6 @@
 				BE272B2628883F3800BBE659 /* mz_zip_rw.h */,
 				BE272B2028883F3700BBE659 /* mz_zip.h */,
 				BE272B1B28883F3700BBE659 /* mz.h */,
-				BE272B2128883F3700BBE659 /* unzip.h */,
-				BE272B2328883F3800BBE659 /* zip.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -179,6 +193,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9CF7132E545EBB0004CCA9 /* unzip.h in Headers */,
+				AD9CF7142E545EBB0004CCA9 /* zip.h in Headers */,
+				AD9CF7152E545EBB0004CCA9 /* ioapi.h in Headers */,
+				AD9CF7222E5462FF0004CCA9 /* crypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +284,10 @@
 				BE272B0B28883EAE00BBE659 /* mz_crypt_apple.c in Sources */,
 				BE272B1728883EAE00BBE659 /* mz_crypt.c in Sources */,
 				BE272B1528883EAE00BBE659 /* mz_os.c in Sources */,
+				AD9CF7192E545EC50004CCA9 /* ioapi.c in Sources */,
+				AD9CF71A2E545EC50004CCA9 /* unzip.c in Sources */,
+				AD9CF71B2E545EC50004CCA9 /* zip.c in Sources */,
 				BE272B0F28883EAE00BBE659 /* mz_strm_split.c in Sources */,
-				BE272AFB28883EAE00BBE659 /* mz_compat.c in Sources */,
 				BE272AFF28883EAE00BBE659 /* mz_strm_pkcrypt.c in Sources */,
 				BE272B0D28883EAE00BBE659 /* mz_strm.c in Sources */,
 				BE272B0128883EAE00BBE659 /* mz_strm_buf.c in Sources */,
@@ -288,8 +308,10 @@
 				BE272B0A28883EAE00BBE659 /* mz_crypt_apple.c in Sources */,
 				BE272B1628883EAE00BBE659 /* mz_crypt.c in Sources */,
 				BE272B1428883EAE00BBE659 /* mz_os.c in Sources */,
+				AD9CF71C2E545EC50004CCA9 /* ioapi.c in Sources */,
+				AD9CF71D2E545EC50004CCA9 /* unzip.c in Sources */,
+				AD9CF71E2E545EC50004CCA9 /* zip.c in Sources */,
 				BE272B0E28883EAE00BBE659 /* mz_strm_split.c in Sources */,
-				BE272AFA28883EAE00BBE659 /* mz_compat.c in Sources */,
 				BE272AFE28883EAE00BBE659 /* mz_strm_pkcrypt.c in Sources */,
 				BE272B0C28883EAE00BBE659 /* mz_strm.c in Sources */,
 				BE272B0028883EAE00BBE659 /* mz_strm_buf.c in Sources */,
